@@ -464,27 +464,33 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+   <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal-conteiner">
-          <button type="button" class="close-button" data-modal-close>
-            <svg class="modal-icon" height="18" width="18">
-              <use href="./images/symbol-defsss.svg#close-black"></use>
-            </svg>
-          </button>
-            </div>
-             <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-            </div>
-             <form>
-              <label for="user_email">Email</label>
-               <input type="email" name="email" id="user_email" />
+        
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        
+        <form name="signup_form" autocomplete="on" novalidate>
+          <div class="modal-conteiner">
+          
+         <label for="user_name">Имя</label>
+         <input class="modal-input" type="name" name="name" id="user_name" />
+          
 
-                <label for="user_password">Password</label>
-                <input type="password" name="password" id="user_password" />
+         <label for="user_pfon">Телефон</label>
+         <input class="modal-input" type="tel" name="tel" id="user_pfon" />
 
-                 <button type="submit">Submit</button>
-               </form>
-          </div>
+         <label for="user_email">Почта</label>
+         <input class="modal-input" type="email" name="email" id="user_email" />
+         </div>
+
+        <button type="submit">Submit</button>
+        
+        </form>
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="modal-icon" height="18" width="18">
+            <use href="./images/symbol-defsss.svg#close-black"></use>
+          </svg>
+        </button>
       </div>
     </div>
 
