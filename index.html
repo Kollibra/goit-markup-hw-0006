@@ -449,6 +449,19 @@
             </li>
           </ul>
         </div>
+        <div class="icon-subs">
+          <p class="action-title">подпишитесь на рассылку</p>
+          <form class="form-subs" name="signup-form" autocomplete="on" novalidate>
+            <label>
+               <input class="form-input" type="email" name="email" placeholder="E-mail" autofocus />
+            </label>
+             <button type="button" class="button-subs" >
+          Подписаться
+          <svg class="" height="24" width="24">
+                  <use href="./images/icon.svg#icon-send"></use>
+          </svg>
+        </button>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -461,6 +474,16 @@
           </button>
         </div>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+         </div>
+        <form>
+          <label for="user_email">Email</label>
+          <input type="email" name="email" id="user_email" />
+
+          <label for="user_password">Password</label>
+          <input type="password" name="password" id="user_password" />
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
