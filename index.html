@@ -469,30 +469,55 @@
         
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         
-        <form name="signup_form" autocomplete="on" novalidate>
-          <div class="modal-conteiner">
+        <form class="form" name="signup_form" autocomplete="on" novalidate>
           
-         <label for="user_name">Имя</label>
-         <input class="modal-input" type="name" name="name" id="user_name" />
+        <div  class="form-field">
+            <div class="form-cont">
+               <label for="user_name" class="modal-lebel">Имя</label>
+         
+               <input class="modal-input" type="name" name="name"                        
+                id="user_name"  />
+                <svg class="form-icon" height="18" widht="18">
+                    <use href="./images/icon.svg#person-black"></use>
+                </svg>
+             </div>
+         
           
+          <div class="form-cont">
+         <label for="user_pfon" class="modal-lebel"> Телефон</label>
+          
+         <input class="modal-input" type="tel"  id="user_pfon" name="tel" autofocus />
+         <svg class="form-icon" height="18" widht="18">
+           <use href="./images/icon.svg#phone-black"></use>
+         </svg>
+         </div>
+         
 
-         <label for="user_pfon">Телефон</label>
-         <input class="modal-input" type="tel" name="tel" id="user_pfon" />
-
-         <label for="user_email">Почта</label>
+          <div class="form-cont">
+         <label for="user_email" class="modal-lebel">Почта</label>
          <input class="modal-input" type="email" name="email" id="user_email" />
+         <svg class="form-icon" height="18" widht="18">
+           <use href="./images/icon.svg#email-black"></use>
+         </svg>
          </div>
 
-        <button type="submit">Submit</button>
+         <label for="user_coment" class="modal-lebel">Комментарий</label>
+         <textarea class="textarea" name="feedback" rows="5" placeholder="Введите текст" id="user_coment" ></textarea> 
+
+
+        </div>
+         
+ 
+        <button type="submit" class="button-modal">Отправить</button>
         
-        </form>
+        </form>  
         <button type="button" class="close-button" data-modal-close>
           <svg class="modal-icon" height="18" width="18">
             <use href="./images/symbol-defsss.svg#close-black"></use>
           </svg>
         </button>
       </div>
-    </div>
+    </div> 
 
     <script src="./js/modal.js"></script>
   </body>
