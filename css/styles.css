@@ -901,6 +901,9 @@ fill: currentColor;
   margin-bottom: 10px;
   padding-left: 42px;
 }
+.modal-input:hover {
+  border: 1px solid var(--accent-text-color);
+}
  .form-icon {
    position: absolute;
    width: 18px;
@@ -929,7 +932,12 @@ textarea {
   resize: none;
   height: 120px;
 } 
-
+textarea:hover {
+  border: 1px solid var(--accent-text-color);
+}
+textarea:focus-visible {
+  border: 1px solid var(--accent-text-color);
+}
 .button-modal {
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
@@ -954,6 +962,30 @@ textarea {
 }
 .textarea {
   padding: 12px  16px;
+}
+
+/*Чекбокс  */
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.chek {
+  margin-top: 20px;
+}
+.check-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
 }
 
 /*
