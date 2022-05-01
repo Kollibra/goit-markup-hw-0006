@@ -979,7 +979,7 @@ textarea:focus {
 }
 
 /*Чекбокс  */
-
+/* скрыла чекбокс от браузера */
 .checkbox {
   position: absolute;
   width: 1px;
@@ -992,8 +992,11 @@ textarea:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .chek {
   margin-top: 20px;
+  margin-left: 12px;
+  
 }
 .check-icon {
   display: inline-block;
@@ -1002,14 +1005,16 @@ textarea:focus {
   border: 2px solid var(--title-text-color);
   border-radius: 4px ;
 }
-.checkbox:checked + .check-icon {
+.checkbox:checked + .check-icon
+ {
+  background-image: url("./images/icon.svg#icon-check");
   border-color: var(--accent-text-color);
   background-color: var(--accent-text-color);
-  background-image: url("./images/icon.svg#icon-check");
+  
   background-size: contain;
   background-origin: border-box;
+}  
 
-}
 .chek-link {
   color: var(--accent-text-color);
 }
