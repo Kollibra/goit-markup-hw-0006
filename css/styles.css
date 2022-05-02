@@ -1007,7 +1007,8 @@ textarea:focus {
 }
 .checkbox:checked + .check-icon
  {
-  background-image: url("./images/icon.svg#icon-check");
+  background-image: url("../images/icon.svg#icon-check");
+ 
   border-color: var(--accent-text-color);
   background-color: var(--accent-text-color);
   
