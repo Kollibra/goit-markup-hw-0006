@@ -481,67 +481,62 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
         <form class="form" name="signup_form" autocomplete="on" novalidate>
-          <div class="form-field">
-            <div class="form-cont">
-              <label for="user_name" class="modal-lebel">Имя</label>
+          <!--<div class="form-field"> -->
+          <div class="form-cont">
+            <label for="user_name" class="modal-lebel">Имя</label>
 
-              <input
-                class="modal-input"
-                type="text"
-                name="text"
-                id="user_name"
-              />
+            <input class="modal-input" type="text" name="text" id="user_name" />
 
-              <svg class="form-icon" height="18">
-                <use href="./images/icon.svg#person-black"></use>
-              </svg>
-            </div>
-
-            <div class="form-cont">
-              <label for="user_pfon" class="modal-lebel"> Телефон</label>
-              <input class="modal-input" type="tel" id="user_pfon" name="tel" />
-              <svg class="form-icon" height="18">
-                <use href="./images/icon.svg#phone-black"></use>
-              </svg>
-            </div>
-
-            <div class="form-cont">
-              <label for="user_email" class="modal-lebel">Почта</label>
-              <input
-                class="modal-input"
-                type="email"
-                name="email"
-                id="user_email"
-              />
-              <svg class="form-icon" height="18">
-                <use href="./images/icon.svg#email-black"></use>
-              </svg>
-            </div>
-
-            <label for="user_coment" class="modal-lebel">Комментарий</label>
-            <textarea
-              class="textarea"
-              name="feedback"
-              rows="5"
-              placeholder="Введите текст"
-              id="user_coment"
-            ></textarea>
-
-            <div class="chek">
-              <input
-                class="checkbox"
-                type="checkbox"
-                id="user-checkbox"
-                value="yes"
-                name="form"
-              />
-              <span class="check-icon"> </span>
-              <label for="user-checkbox" class="chek-lebel"
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="chek-link" href="">Условия договора</a>
-              </label>
-            </div>
+            <svg class="form-icon" height="18">
+              <use href="./images/icon.svg#person-black"></use>
+            </svg>
           </div>
+
+          <div class="form-cont">
+            <label for="user_pfon" class="modal-lebel"> Телефон</label>
+            <input class="modal-input" type="tel" id="user_pfon" name="tel" />
+            <svg class="form-icon" height="18">
+              <use href="./images/icon.svg#phone-black"></use>
+            </svg>
+          </div>
+
+          <div class="form-cont">
+            <label for="user_email" class="modal-lebel">Почта</label>
+            <input
+              class="modal-input"
+              type="email"
+              name="email"
+              id="user_email"
+            />
+            <svg class="form-icon" height="18">
+              <use href="./images/icon.svg#email-black"></use>
+            </svg>
+          </div>
+
+          <label for="user_coment" class="modal-lebel">Комментарий</label>
+          <textarea
+            class="textarea"
+            name="feedback"
+            rows="5"
+            placeholder="Введите текст"
+            id="user_coment"
+          ></textarea>
+
+          <div class="chek">
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="user-checkbox"
+              value="yes"
+              name="form"
+            />
+            <span class="check-icon"> </span>
+            <label for="user-checkbox" class="chek-lebel"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="chek-link" href="">Условия договора</a>
+            </label>
+          </div>
+          <!--</div>-->
 
           <button type="submit" class="button-modal">Отправить</button>
         </form>

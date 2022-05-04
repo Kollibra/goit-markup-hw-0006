@@ -826,7 +826,11 @@ fill: currentColor;
   transform: translate(-50%, -50%) scale(0.9);
 }
 .modal {
+    
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -843,7 +847,6 @@ fill: currentColor;
     transform: translate(-50%, -50%) scale(1);
         
     }
-
 
 .close-button { 
   position: absolute;
@@ -872,38 +875,38 @@ fill: currentColor;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  margin: 40px 40px 12px 40px;
+  
   color: var(--title-text-color); 
+  margin-bottom: 12px;
   
 }
 .form {
-  width: 448px;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
- .form-field {
+  display: flex;
+  flex-direction: column;
    
-   display: flex;
-   flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
+}
 
- }
 .form-cont {
   position: relative;
+  
 }
 .modal-input {
   position: relative;
-  height: 40px;
-  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  display: inline;
+  height: 40px ;
+  width: 448px ;
   margin-top: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
+  border-radius: 4px;
+ 
+  
 }
 .modal-input:hover  {
   border: 1px solid var(--accent-text-color);
   fill: var(--accent-text-color);
+  
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -912,12 +915,13 @@ fill: currentColor;
 }
  .form-icon {
    position: absolute;
+   justify-content: center;
    width: 18px;
    height: 18px;
    margin: 0;
    padding: 0;
    left: 15px; 
-   top: 50%;
+   top: 45%;
   }
   .form-icon:hover {
     fill: var(--accent-text-color);
@@ -930,17 +934,18 @@ fill: currentColor;
   
 }
 .modal-lebel {
-  /*position: relative; */
+  
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  
   letter-spacing: 0.01em;
 }
 textarea {
   resize: none;
   height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 } 
 textarea:hover {
   border: 1px solid var(--accent-text-color);
@@ -951,6 +956,9 @@ textarea:focus-visible {
 textarea:focus {
   border: 1px solid var(--accent-text-color);
 }
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
 
 .button-modal {
   background-color: var(--accent-text-color);
@@ -960,19 +968,22 @@ textarea:focus {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
-  padding: 10px 32px;
+  padding: ;
   border-radius: 4px;
   border: none;
-  margin: 40px 164px 30px 164px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-modal:hover .button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #188CE8;
 }
 .textarea {
   padding: 12px  16px;
@@ -1007,13 +1018,12 @@ textarea:focus {
 }
 .checkbox:checked + .check-icon
  {
-  background-image: url("../images/icon.svg#icon-check");
- 
-  border-color: var(--accent-text-color);
-  background-color: var(--accent-text-color);
-  
   background-size: contain;
   background-origin: border-box;
+  border-color: var(--accent-text-color);
+  background-color: var(--accent-text-color); 
+  background-image: url("../images/icon\ check\ \(1\).svg")
+ 
 }  
 
 .chek-link {
