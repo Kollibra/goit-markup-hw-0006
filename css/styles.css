@@ -378,6 +378,10 @@ header {
  width: 270px;
  background-color: var(--white-text-color);
  padding: 30px 32px ;
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+ 0px 1px 1px rgba(0, 0, 0, 0.14),
+ 0px 2px 1px rgba(0, 0, 0, 0.2);
+ border-radius: 0px 0px 4px 4px;
   
 }
 
@@ -764,7 +768,7 @@ fill: currentColor;
   margin-left: 70px;
 }
 .icon-subs {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .form-input {
   width: 358px;
@@ -968,7 +972,6 @@ textarea::placeholder {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
-  padding: ;
   border-radius: 4px;
   border: none;
   margin-top: 30px;
