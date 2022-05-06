@@ -648,8 +648,6 @@ fill: currentColor;
   align-items: baseline;
   flex-direction: row;
 }
-
-
 .address-link {
   margin-top: 20px;
 }
@@ -671,10 +669,8 @@ fill: currentColor;
   text-decoration: none;
 }
 
-
 .action-cont {
   display: flex;
-  
 }
 .action {
   display: flex;
@@ -882,17 +878,13 @@ fill: currentColor;
   
   color: var(--title-text-color); 
   margin-bottom: 12px;
-  
 }
 .form {
   display: flex;
   flex-direction: column;
- 
-}
-
+ }
 .form-cont {
   position: relative;
-  
 }
 
 .modal-input {
@@ -930,7 +922,10 @@ fill: currentColor;
   
 }
 .modal-input:focus + .form-icon {
-  color: var(--accent-text-color); 
+  fill: var(--accent-text-color); 
+}
+.modal-input:hover + .form-icon {
+  fill: var(--accent-text-color);
 }
 
 .modal-lebel {
